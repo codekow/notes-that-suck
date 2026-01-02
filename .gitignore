@@ -1,1 +1,4 @@
 scratch/
+tmp/
+*.bin
+*.zip
