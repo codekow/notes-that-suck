@@ -4,7 +4,7 @@ A collection of notes for robot vacuums so I don't have to relearn everything wh
 
 [Dreame D9 Notes](docs/D9.md)
 
-### Quickstart
+## Quickstart
 
 Setup builder scripts
 
