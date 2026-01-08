@@ -17,3 +17,4 @@ make menuconfig
 ## Links
 
 - https://itooktheredpill.irgendwo.org/2020/rooting-xiaomi-vacuum-robot
+- https://github.com/rumpeltux/viomi-rooting
