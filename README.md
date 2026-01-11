@@ -2,7 +2,8 @@
 
 A collection of notes for robot vacuums so I don't have to relearn everything when I care about this subject.
 
-[Dreame D9 Notes](docs/D9.md)
+[Dreame D9 Notes](d9/NOTES.md)
+[Wyze Notes](wyze/NOTES.md)
 
 ## Quickstart
 
