@@ -4,6 +4,52 @@ Notes for building a custom firmware for Dreame D9
 
 ## Notes Dump
 
+## Quickstart
+
+Setup builder scripts
+
+```sh
+mkdir scratch
+cd scratch
+
+git clone https://github.com/dgiese/dustbuilder-script-public builder
+cd builder
+
+git clone https://github.com/dgiese/dustbuilder-features features
+
+cat <<EOF >.gitignore
+custom/
+features/
+output/
+
+_buildflags.sh
+update.zip
+EOF
+
+chmod +x *.sh
+```
+
+Recreate update.zip
+
+```sh
+zip update.zip -9 boot.img mcu* rootfs.img*
+```
+
+Build firmware
+
+```sh
+# cp _buildflags.sh update.zip
+
+fakeroot
+
+curl https://github.com/codekow.keys > authorized_keys
+
+./_buildflags.sh
+./modify1cimage.sh
+
+exit
+```
+
 ### Sound files
 
 Play sounds
